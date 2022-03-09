@@ -1,0 +1,116 @@
+.about {
+    padding: 66px 0 19px;
+
+    &__content {
+        padding: 48px 15px 0;
+    }
+    &__title {
+        margin: 8px 0 25px;
+    }
+    &__text {
+        font-size: 1.125rem;
+        margin: 25px 0 29px;
+        padding-right: 90px;
+    }
+    &__list-item {
+        font-size: 1.125rem;
+        margin-bottom: 9px;
+    }
+    &__img {
+        display: block;
+        margin-left: 20px;
+        max-width: 510px;
+        height: 621px;
+    }
+    .li__icon{
+        margin-top: -2px;
+        width: 16px;
+        height: 15px;
+        margin-right: 10px;
+    }
+    .li__icon-small{
+        width: 11px;
+        height: 17px;
+        margin: -3px 12px 0 3px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .about {
+        &__img {
+            width: 100%;
+            height: auto;
+            margin:0 auto;
+        }
+        &__text {
+            padding: 0;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .about {
+        &__img {
+            max-width: 450px;
+        }
+        &__list-item {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+    }
+}
+
+.about-2 {
+    padding: 33px 0 19px;
+    &__img {
+        margin-left: -29px;
+        max-width: 718px;
+        height: 491px;
+    }
+    &__content {
+        margin-top: 94px;
+        padding-right: 0;
+    }
+    &__title {
+        margin: 8px 0 27px;
+    }
+    &__text {
+        font-size: 1.125rem;
+        margin: 24px 0 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    .about-2 {
+        padding: 20px 0 35px;
+        &__img {
+            width: 100%;
+            height: auto;
+            margin: 30px auto;
+            
+        }
+        &__content {
+            margin-top: 30px;
+        }
+        &__text {
+            padding: 0;
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .about-2 {
+        &__img {
+            width: 100%;
+            height: auto;
+            margin:0 auto;
+        }
+        &__content {
+            margin-top: 40px;
+            padding: 0 15px;
+        }
+        &__text {
+            padding: 0;
+        }
+    }
+}

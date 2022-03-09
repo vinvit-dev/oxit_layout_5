@@ -1,0 +1,50 @@
+@import "fonts";
+@import "mixin";
+
+$white: #fff;
+$blue: #008ed6;
+$gray: #999999;
+$black: #1a1a1a;
+$bg-gray: #f2f2f2; 
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: $black;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+@import "block";
+
+@import "header";
+@import "home";
+@import "features";
+@import "about";
+@import "comments";
+@import "pricing";
+@import "contacts";
+@import "form";
+@import "footer";

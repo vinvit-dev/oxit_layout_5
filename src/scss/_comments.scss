@@ -1,0 +1,133 @@
+
+.comments {
+    text-align: center;
+    padding: 59px 0 45px;
+    .underline {
+        margin: 0 auto;
+    }
+    &__title {
+        color: $white;
+    }
+    &__slick {
+        margin: 86px -15px 0;
+        color: $white;
+    }
+}
+
+.comment {
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in;
+    text-align: left;
+    &__text {
+        font-style: italic;
+        line-height: 32.5px;
+        letter-spacing: -0.054px;
+        padding-bottom: 23px;
+    }
+    &__user {
+        display: flex;
+        font-style: normal;
+        font-size: 1rem;
+        div {
+            line-height: 22px;
+            margin: 2px 0 2.5px 12px;
+        }
+    }
+    &__place {
+        font-size: 14px;
+        font-weight: bold;
+        padding-top: 2px;
+        font-variant: small-caps;
+    }
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    margin-top: 140px;
+    margin-right: 22px;
+    button {
+        width: 7px;
+        height: 7px;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 100%;
+        margin-left: 25px;
+    }
+    .slick-active button {
+        width: 13px;
+        height: 13px;
+        background-color: #fff;
+        margin:0 -5px 0 17px;
+    }
+}
+@media (max-width: 767px) {
+    .comments {
+        &__slick {
+            margin: 45px 0 0;
+        }
+    }
+    .comment{
+        text-align: center;
+        padding: 0 15px;
+        &__user {
+            justify-content: center;
+        }
+    }
+
+    .slick-dots {
+        margin-top: 40px;
+    }
+}
+
+.ads {
+    .row {
+        margin:0;
+    }
+    padding: 60px 0 57px;
+    color: $white;
+    &__text {
+        font-size: 2.25rem;
+        font-weight: 300;
+        padding: 0;
+        margin-top: 1px;
+        letter-spacing: 0.09px;
+    }
+    &__bold {
+        font-weight: 700;
+        letter-spacing: -0.45px;
+    }
+    &__buttons {
+        padding: 0 0 0 50px;
+    }
+    &__download-btn {
+        margin-left: 16px;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .ads {
+        text-align: center;
+        &__buttons {
+            margin: 0;
+            margin-top: -7px;
+        }
+        &__download-btn {
+            margin: 10px 0 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .ads {
+        text-align: center;
+        &__buttons {
+            margin-top: 20px;
+            padding: 0;
+        }
+
+    }
+}

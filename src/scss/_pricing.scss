@@ -1,0 +1,93 @@
+.pricing {
+    text-align: center;
+    padding: 55px 0 40px;
+    .underline {
+        margin: 0 auto;
+    }
+}
+
+.articles {
+    margin-top: 70px;
+    margin-bottom: 21px;
+}
+
+.article {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    margin-left: -1px;
+    &__title {
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 24px 0 11px;
+        margin-left: 0px;
+    }
+    &__price {
+        font-size: 60px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        padding: 0px 6px 5px 0;
+    }
+    &__icon {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    &__time {
+        margin-top: -21px;
+        margin-left: 1px;
+    }
+    &__section {
+        border-bottom: 1px solid #e0e0e0;
+        border-top: 1px solid #e0e0e0;
+        padding: 16px 0 32px;
+    }
+    &__text{
+        padding: 45px 34px 0 36px;
+        font-size: 18px;
+        line-height: 26px;
+        color: #999999;
+        .blue {
+            color: #008ed6;
+        }
+    }
+    &__button {
+        @include button;
+        width: 162px;
+        height: 52px;
+        border: 1px solid #e0e0e0;
+        color: #008ed6;
+        background-color: #fff;
+        margin: 41px 0 27px 1px;
+    }
+}
+
+
+
+.article:hover .article__section {
+    box-sizing: unset;
+    background: $blue;
+    border: 1px solid $blue;
+    color: $white;
+}
+
+.article:hover .article__title {
+    color: $blue;
+} 
+
+.article:hover .article__button {
+    background: $blue;
+    color: $white;
+    border: 1px solid $blue;
+}
+
+@media (max-width: 991px) {
+    .article {
+        margin: 15px 0;
+    }
+    .articles {
+        margin-top: 50px;
+    }
+}

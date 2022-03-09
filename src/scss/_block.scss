@@ -1,0 +1,93 @@
+.block {
+    max-width: 100%;
+    font-size: 18px;
+    &__title {
+        font-size: 2.25rem;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+        margin: 8px 0 28px;
+    }
+    &__subtitle {
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.45px;
+        color: $blue;
+    }
+    &__text {
+        line-height: 1.625rem;
+        color: #a1a1a1;
+    }
+}
+
+.bg-1 {
+    background-image: url('@img/bg_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-2 {
+    background-image: url('@img/bg_2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.underline {
+    display: block;
+    position: relative;
+    width: 42px;
+    height: 2px;
+}
+
+.underline::before {
+    content: "";
+    background-color: $blue;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+}
+.underline::after {
+    content: "";
+    background-color: $blue;
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 2px;
+}
+
+.button {
+    @include button;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.button-blue {
+    @include button;
+    border: none;
+    background-color: $blue;
+}
+
+.gray {
+    background-color: $bg-gray;
+}
+
+.dark {
+    background-color: #15141a;
+}
+
+.map {
+    width: 100%;
+    height: 369px;
+    transform: translateY(-36px);
+    z-index: 1;
+    margin-bottom: -38px;
+}
+
+@media (max-width: 768px) {
+   .map {
+       transform: translateY(0px);
+   }
+}

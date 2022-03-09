@@ -1,0 +1,35 @@
+.contacts {
+    text-align: center;
+    padding: 55px 0 40px;
+    .underline {
+        margin: 0 auto;
+    }
+    &__list {
+        margin: 59px -15px 0;
+    }
+}
+
+.contact {
+    padding: 0;
+    color: $gray;
+    &__img {
+        margin:0 0 25px;
+    }
+}
+.contact-send {
+    &__img {
+        margin:0 0 30px -1px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts {
+        padding: 40px 0 20px;
+        &__list {
+            margin: 30px 0 0 ;
+        }
+    }
+    .contact{
+        margin: 20px 0;
+    }
+}

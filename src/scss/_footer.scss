@@ -1,0 +1,42 @@
+.footer {
+    margin-top: -4px;
+    padding: 52px 0 40px;
+    color: #444348;
+    text-align: center  ;
+    &__links {
+        font-size: 18px;
+        margin-right: 6px;
+        margin-bottom: 20px;  
+    }
+    &__link {
+        margin-right: 28px;
+        color: #444348; 
+    }
+    &__link:hover {
+        color: #008ed6;;
+    }
+    &__link:first-child {
+        margin-left: 5px;
+    }
+    &__link:last-child {
+        margin-right: 0;
+        margin-left: 3px;
+    }
+    .fa-facebook-f {
+        margin-left: 4px;
+        margin-right: 29px;
+    }
+    .fa-linkedin-in {
+        font-size: 19px;
+    }
+    &__copyrights{
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .col-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
